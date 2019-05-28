@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/" render={() => <Albums/>}/>
-        <Route exact path="/photos/:id" render={(props) => <Photos {...props} />}/>
+        <Route exact path="/code-test/" render={() => <Albums/>}/>
+        <Route exact path="/code-test/photos/:id" render={(props) => <Photos {...props} />}/>
       </Switch>
     </div>
   );
