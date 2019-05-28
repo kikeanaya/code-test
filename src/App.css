@@ -1,33 +1,95 @@
 .App {
   text-align: center;
+  background-color: #111b43;
+  height: 100%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1{
+  margin: 0;
+  font-size: 60px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+h2{
+  font-size: 50px;
+  color: rgb(172, 169, 169);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: lightcoral;
+  font-weight: 700;
+}
+
+li{
+  list-style: none;
+  margin: 20px 0;
+}
+
+.albums-list{
+  padding: 30px;
+  padding-top: 60px;
+  min-height: 87vh;
+}
+
+.photos-list{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.photo-container{
+  width: 20%;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 30px 0px;
+  padding: 15px;
+  min-width: 180px;
+}
+
+input{
+  -webkit-appearance: none;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.spinner-container{
+  height: 100vh;
+  background-color: #111b43;
+}
+
+.spinner{
+  width: 100px;
+  height: 100px;
+  border: 4px solid #ebf2ef;
+  border-top: 5px solid #FF4E50;
+  border-radius: 100%;
+  animation: spin 1s infinite linear;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+
+
+
+}
+
+@keyframes spin {
+  from{
+      transform: rotate(0deg);
+  }to{
+      transform: rotate(360deg);
   }
 }
